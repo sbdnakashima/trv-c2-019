@@ -1,0 +1,27 @@
+# Agent Manifest — AgentRegistry entry point
+# This file is required for AgentRegistry auto-discovery (lazy-load architecture)
+
+id: "TRV-C2-019"
+name: "Destination Visitor-Statistics Query Agent"
+namespace: "trv"
+version: "0.1.0"
+enabled: true
+category: "Cat 2"
+generation_mode: "llm"
+industry: "TRV"
+base_type: "AgentBaseGraph"     # L1 直接継承
+class: "src.graph.graph.Graph"
+required_trust_level: "VERIFIED_EXTERNAL"
+
+# Compile-time gates — declare every secret/extra actually used.
+# Azure OpenAI（艦隊全体で Anthropic から移行済み。migration/MIGRATION_RULES.md §3-bis 参照）。
+# Inner ① request_normalize resolves the credentials at runtime via
+# ctx.secrets.require(...) and imports AzureOpenAIClient, so the
+# "openai" extra is a real dependency of this agent.
+requires:
+  secrets:
+    - AZURE_OPENAI_API_KEY
+    - AZURE_OPENAI_ENDPOINT
+    - AZURE_OPENAI_DEPLOYMENT
+  extras:
+    - openai

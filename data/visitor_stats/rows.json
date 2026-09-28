@@ -1,0 +1,38 @@
+[
+  {
+    "period": "2025-Q1",
+    "region": "関東",
+    "segment": "訪日外客",
+    "metric": "訪問者数",
+    "value": 12840000,
+    "unit": "人",
+    "citation": "JNTO 訪日外客統計 2025年3月"
+  },
+  {
+    "period": "2025-Q1",
+    "region": "関西",
+    "segment": "訪日外客",
+    "metric": "延べ宿泊者数",
+    "value": 9530000,
+    "unit": "人泊",
+    "citation": "観光庁 宿泊旅行統計調査 2025年3月"
+  },
+  {
+    "period": "2025-Q1",
+    "region": "北海道",
+    "segment": "訪日外客",
+    "metric": "訪問者数",
+    "value": 2110000,
+    "unit": "人",
+    "citation": "JNTO 訪日外客統計 2025年3月"
+  },
+  {
+    "period": "2024-Q4",
+    "region": "関東",
+    "segment": "訪日外客",
+    "metric": "訪問者数",
+    "value": 11200000,
+    "unit": "人",
+    "citation": "JNTO 訪日外客統計 2024年12月"
+  }
+]

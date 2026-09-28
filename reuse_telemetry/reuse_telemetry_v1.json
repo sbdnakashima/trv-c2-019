@@ -1,0 +1,251 @@
+{
+  "counts": {
+    "baseline_reuse_ratio": 0.25,
+    "declared_public_imports": 3,
+    "local_node_or_service_classes": 9,
+    "parsed_files": 24
+  },
+  "distribution": {
+    "fleet_coverage_denominator": "unknown",
+    "mode": "scaffold-copy-only",
+    "required_invariant": false
+  },
+  "enforcement": "none",
+  "harvest_candidates": [
+    {
+      "reason": "No versioned shared-node catalogue is declared by the installed wheel.",
+      "replacement": null,
+      "source": {
+        "class": "DomainWorkflowGraphNode",
+        "file": "src/examples/graph_cat2_sample.py",
+        "line": 87
+      },
+      "status": "no_published_replacement"
+    },
+    {
+      "reason": "No versioned shared-node catalogue is declared by the installed wheel.",
+      "replacement": null,
+      "source": {
+        "class": "VisitorStatsQueryGraphNode",
+        "file": "src/graph/graph.py",
+        "line": 108
+      },
+      "status": "no_published_replacement"
+    },
+    {
+      "reason": "No versioned shared-node catalogue is declared by the installed wheel.",
+      "replacement": null,
+      "source": {
+        "class": "InputExpandNode",
+        "file": "src/nodes/input_expand_node.py",
+        "line": 183
+      },
+      "status": "no_published_replacement"
+    },
+    {
+      "reason": "No versioned shared-node catalogue is declared by the installed wheel.",
+      "replacement": null,
+      "source": {
+        "class": "PassThroughNode",
+        "file": "src/nodes/pass_through_node.py",
+        "line": 22
+      },
+      "status": "no_published_replacement"
+    },
+    {
+      "reason": "No versioned shared-node catalogue is declared by the installed wheel.",
+      "replacement": null,
+      "source": {
+        "class": "ProvenanceAssembleNode",
+        "file": "src/nodes/provenance_assemble_node.py",
+        "line": 109
+      },
+      "status": "no_published_replacement"
+    },
+    {
+      "reason": "No versioned shared-node catalogue is declared by the installed wheel.",
+      "replacement": null,
+      "source": {
+        "class": "QueryValidateNode",
+        "file": "src/nodes/query_validate_node.py",
+        "line": 167
+      },
+      "status": "no_published_replacement"
+    },
+    {
+      "reason": "No versioned shared-node catalogue is declared by the installed wheel.",
+      "replacement": null,
+      "source": {
+        "class": "ReadonlyQueryNode",
+        "file": "src/nodes/readonly_query_node.py",
+        "line": 124
+      },
+      "status": "no_published_replacement"
+    },
+    {
+      "reason": "No versioned shared-node catalogue is declared by the installed wheel.",
+      "replacement": null,
+      "source": {
+        "class": "RequestNormalizeNode",
+        "file": "src/nodes/request_normalize_node.py",
+        "line": 179
+      },
+      "status": "no_published_replacement"
+    },
+    {
+      "reason": "No versioned shared-node catalogue is declared by the installed wheel.",
+      "replacement": null,
+      "source": {
+        "class": "Service",
+        "file": "src/services/service.py",
+        "line": 12
+      },
+      "status": "no_published_replacement"
+    }
+  ],
+  "limitations": [
+    "This artifact is per-repository telemetry, not a fleet roll-up.",
+    "Distribution is scaffold-copy-only: reuse_telemetry.py is not REQUIRED_INVARIANT and its CI job is allow_failure:true.",
+    "Fleet coverage denominator is unknown: repositories missing this scaffold script emit no signature artifact, so artifact counts must not be read as fleet-wide coverage.",
+    "No numeric threshold, warning, finding, or release decision is derived from the ratio or pattern registry.",
+    "Pattern candidates are AST-shape signals, not proof of equivalent domain behaviour or a replacement recommendation."
+  ],
+  "local_shapes": [
+    {
+      "class": "DomainWorkflowGraphNode",
+      "file": "src/examples/graph_cat2_sample.py",
+      "line": 87
+    },
+    {
+      "class": "VisitorStatsQueryGraphNode",
+      "file": "src/graph/graph.py",
+      "line": 108
+    },
+    {
+      "class": "InputExpandNode",
+      "file": "src/nodes/input_expand_node.py",
+      "line": 183
+    },
+    {
+      "class": "PassThroughNode",
+      "file": "src/nodes/pass_through_node.py",
+      "line": 22
+    },
+    {
+      "class": "ProvenanceAssembleNode",
+      "file": "src/nodes/provenance_assemble_node.py",
+      "line": 109
+    },
+    {
+      "class": "QueryValidateNode",
+      "file": "src/nodes/query_validate_node.py",
+      "line": 167
+    },
+    {
+      "class": "ReadonlyQueryNode",
+      "file": "src/nodes/readonly_query_node.py",
+      "line": 124
+    },
+    {
+      "class": "RequestNormalizeNode",
+      "file": "src/nodes/request_normalize_node.py",
+      "line": 179
+    },
+    {
+      "class": "Service",
+      "file": "src/services/service.py",
+      "line": 12
+    }
+  ],
+  "mode": "baseline-only",
+  "pattern_registry": [
+    {
+      "candidates": [],
+      "detector_status": "implemented",
+      "pattern_id": "credential_pii_regex",
+      "replacement": [
+        "shared.security.detect_credentials",
+        "shared.security.detect_pii"
+      ],
+      "status": "declared_public_api"
+    },
+    {
+      "candidate_symbols": [
+        "shared.security.detect_injection"
+      ],
+      "candidates": [],
+      "detector_status": "implemented",
+      "pattern_id": "role_marker_sanitization",
+      "replacement": null,
+      "status": "symbol_not_declared_public_api"
+    },
+    {
+      "candidates": [],
+      "detector_status": "implemented",
+      "pattern_id": "path_traversal_guard",
+      "replacement": null,
+      "status": "unmapped_no_known_symbol"
+    },
+    {
+      "candidate_symbols": [
+        "shared.utils.retry_with_backoff"
+      ],
+      "candidates": [],
+      "detector_status": "implemented",
+      "pattern_id": "retry_with_backoff",
+      "replacement": null,
+      "status": "symbol_not_declared_public_api"
+    },
+    {
+      "candidates": [],
+      "detector_status": "implemented",
+      "pattern_id": "fail_closed_citation_gate",
+      "replacement": null,
+      "status": "unmapped_no_known_symbol"
+    },
+    {
+      "candidate_symbols": [
+        "shared.services.llm.BaseLLM"
+      ],
+      "candidates": [],
+      "detector_status": "implemented",
+      "pattern_id": "llm_client_di_seam",
+      "replacement": null,
+      "status": "symbol_not_declared_public_api"
+    }
+  ],
+  "public_api_rule": "Only symbols in the installed module's declared __all__ are replacement-capable.",
+  "public_imports": [
+    {
+      "file": "src/api/server.py",
+      "line": 14,
+      "symbol": "framework.schemas.invocation_context.InvocationContext"
+    },
+    {
+      "file": "src/api/server.py",
+      "line": 18,
+      "symbol": "shared.secrets.factory"
+    },
+    {
+      "file": "src/nodes/request_normalize_node.py",
+      "line": 27,
+      "symbol": "framework.schemas.invocation_context.InvocationContext"
+    }
+  ],
+  "schema_version": 2,
+  "scope": {
+    "excluded": [
+      "tests/",
+      "examples/",
+      "comments",
+      "string literals"
+    ],
+    "included": [
+      "src"
+    ]
+  },
+  "wheel": {
+    "distribution": "agenticstar-agentcore",
+    "version": "1.0.0"
+  }
+}

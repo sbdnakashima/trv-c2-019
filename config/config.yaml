@@ -1,0 +1,12 @@
+# Runtime configuration
+# Moved out of config/agent.yaml during the manifest migration.
+# AgentRegistry loads this file separately and passes it as Graph(config=...).
+# Key names are kept as-is (legacy names are not silently renamed).
+
+max_retry: 3
+timeout_seconds: 30
+
+# 承認済み取り込み済みデータセットの配置パス（docs/02_design.md §4-3）。シークレットでは
+# ないため config で管理する。DEFAULT_DATASET_ROOT（src/services/visitor_stats_dataset.py）
+# と同一文字列にすること（食い違うと silent divergence になる）。
+dataset_root: "data/visitor_stats"

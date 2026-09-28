@@ -1,0 +1,8 @@
+{
+  "name": "JNTO 訪日外客統計・観光庁宿泊旅行統計調査（承認済み取り込み分）",
+  "version": "2025.03",
+  "ingested_date": "2025-04-10",
+  "source": "日本政府観光局(JNTO) 訪日外客統計 / 観光庁 宿泊旅行統計調査",
+  "note": "本エージェント用に事前取り込みした承認済みデータセット。ライブ API は使用しない（docs/02_design.md §1-2）。",
+  "available_dimensions": ["period", "region", "segment", "metric"]
+}
